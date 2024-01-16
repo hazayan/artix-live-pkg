@@ -9,20 +9,20 @@ pkgname=('artix-live-base'
         'artix-live-s6'
         'artix-live-dinit'
         'artix-grub-live')
-pkgver=2023.12
-pkgrel=4
+pkgver=2024.01
+pkgrel=1
 pkgdesc='Artix live session'
 arch=('any')
 url="https://gitea.artixlinux.org/artix/artix-live"
 license=('GPL')
 makedepends=('git' 'bash' 'artools-base')
-_commit=74f8284a74d473c9931007fd78d99da0e3587465 # 0.14
+_commit=ede2702393c5eff13865b59e8dca128bbbad17a4 # 0.14
 source=("git+$url.git#commit=$_commit")
 sha256sums=('SKIP')
-#
-# pkgver() {
-#     date +%Y.%m
-# }
+
+pkgver() {
+    date +%Y.%m
+}
 
 build() {
     make -C "${pkgbase}"
