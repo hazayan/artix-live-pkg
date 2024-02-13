@@ -1,7 +1,7 @@
 ---
 pkgbase:
   name: artix-live
-  version: 2024.02-1
+  version: 2024.02-2
   arch:
     - any
   pkgname:
@@ -13,11 +13,11 @@ pkgbase:
     - artix-grub-live
 actions:
   addRepo: world
-  removeRepo: world-gremlins
-  triggersBuild: false
+  removeRepo: null
+  triggersBuild: true
   triggersRebuild: false
   triggersRepoAdd: true
-  triggersRepoRemove: true
+  triggersRepoRemove: false
   triggersNoCheck: false
 repos:
   system-goblins:
@@ -36,14 +36,14 @@ repos:
     version: null
     packages: []
   world:
-    version: 2024.02-1
+    version: 2024.02-2
     packages:
-      - artix-live-base-2024.02-1-any.pkg.tar.zst
-      - artix-live-openrc-2024.02-1-any.pkg.tar.zst
-      - artix-live-runit-2024.02-1-any.pkg.tar.zst
-      - artix-live-s6-2024.02-1-any.pkg.tar.zst
-      - artix-live-dinit-2024.02-1-any.pkg.tar.zst
-      - artix-grub-live-2024.02-1-any.pkg.tar.zst
+      - artix-live-base-2024.02-2-any.pkg.tar.zst
+      - artix-live-openrc-2024.02-2-any.pkg.tar.zst
+      - artix-live-runit-2024.02-2-any.pkg.tar.zst
+      - artix-live-s6-2024.02-2-any.pkg.tar.zst
+      - artix-live-dinit-2024.02-2-any.pkg.tar.zst
+      - artix-grub-live-2024.02-2-any.pkg.tar.zst
   lib32-goblins:
     version: null
     packages: []
